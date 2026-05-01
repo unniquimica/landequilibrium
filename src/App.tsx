@@ -332,7 +332,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 md:py-16 bg-white border-t border-[#E6E6DF]">
+      <footer className="py-6 md:py-10 bg-white border-t border-[#E6E6DF]">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
             <div className="md:col-span-2 space-y-4 md:space-y-6">
@@ -363,8 +363,8 @@ export default function App() {
             </div>
           </div>
           
-          <div className="mt-8 pt-6 md:mt-16 md:pt-8 border-t border-[#E6E6DF] text-center text-[10px] uppercase tracking-widest text-on-surface-variant/60 leading-relaxed">
-            © 2024 Adriana de Fátima Massoterapia <br className="md:hidden" /> Feito para o seu equilíbrio
+          <div className="mt-6 pt-4 md:mt-10 md:pt-6 border-t border-[#E6E6DF] text-center text-[10px] uppercase tracking-widest text-on-surface-variant/60 leading-relaxed">
+            © 2024 Adriana de Fátima Massoterapia <br /> Feito para o seu equilíbrio
           </div>
         </div>
       </footer>
