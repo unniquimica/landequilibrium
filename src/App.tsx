@@ -145,7 +145,7 @@ export default function App() {
                   Meu objetivo é proporcionar um ambiente de acolhimento onde você possa se desconectar do mundo exterior e focar na sua saúde física e mental. Cada sessão é única e personalizada para atender às suas necessidades específicas.
                 </p>
                 <div className="pt-6 flex justify-center lg:justify-start">
-                  <a href={WHATSAPP_LINK} className="btn-outline">
+                  <a href={WHATSAPP_LINK} target="_blank" className="btn-outline">
                     <Calendar size={20} />
                     Agendar Avaliação
                   </a>
