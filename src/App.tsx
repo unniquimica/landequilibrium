@@ -46,10 +46,10 @@ export default function App() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-secondary-container hidden md:block">
-        <div className="container-custom flex justify-between items-center h-20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-secondary-container hidden md:block transition-all duration-300">
+        <div className="container-custom flex justify-between items-center h-24 lg:h-32">
           <a href="#home" className="flex items-center gap-2">
-            <img src={LOGO_URL} alt="Equilibrium" className="h-14 w-auto" />
+            <img src={LOGO_URL} alt="Equilibrium" className="h-14 lg:h-24 w-auto" />
           </a>
           
           <div className="hidden md:flex items-center gap-8 text-on-surface font-medium">
@@ -64,7 +64,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-4 md:pt-40 pb-6 md:pb-20 overflow-hidden relative">
+      <section id="home" className="pt-4 md:pt-44 lg:pt-52 pb-6 md:pb-20 overflow-hidden relative">
         <div className="absolute top-40 right-0 w-96 h-96 bg-secondary-container/50 rounded-full blur-3xl opacity-20 -z-10" />
         <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-12 lg:items-end">
           <motion.div 
@@ -332,7 +332,7 @@ export default function App() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
             <div className="md:col-span-2 space-y-4 md:space-y-6">
-              <img src={LOGO_URL} alt="Equilibrium" className="h-16 w-auto mx-auto md:mx-0 opacity-80" />
+              <img src={LOGO_URL} alt="Equilibrium" className="h-16 md:h-24 w-auto mx-auto md:mx-0 opacity-80" />
               <p className="text-on-surface-variant max-w-md">
                 Dedicada a proporcionar saúde, equilíbrio e relaxamento através de técnicas manuais precisas e personalizadas.
               </p>
