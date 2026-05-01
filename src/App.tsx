@@ -261,17 +261,21 @@ export default function App() {
             ].map((service, index) => (
               <motion.div 
                 key={service.title}
-                className="group bg-white rounded-[24px] overflow-hidden border border-[#E6E6DF] hover:shadow-2xl hover:shadow-black/[0.04] transition-all duration-500"
+                className="group bg-white rounded-[24px] overflow-hidden border border-[#E6E6DF] transition-all duration-500 active:shadow-inner"
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 30 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: index * 0.1 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img 
+                  <motion.img 
                     src={service.img} 
                     alt={service.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ duration: 0.7 }}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -284,9 +288,15 @@ export default function App() {
                   <p className="text-on-surface-variant line-clamp-3">
                     {service.desc}
                   </p>
-                  <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-2 text-primary font-bold transition-transform group-hover:translate-x-1">
+                  <motion.a 
+                    href={WHATSAPP_LINK} 
+                    target="_blank" 
+                    className="inline-flex items-center gap-2 text-primary font-bold"
+                    whileHover={{ x: 5 }}
+                    whileTap={{ x: 5 }}
+                  >
                     Saiba mais <ArrowRight size={16} />
-                  </a>
+                  </motion.a>
                 </div>
               </motion.div>
             ))}
