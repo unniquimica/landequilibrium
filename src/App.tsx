@@ -25,7 +25,7 @@ const stagger = {
   }
 };
 
-const WHATSAPP_LINK = "https://wa.me/5515991029607?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20a%20Massoterapia";
+const WHATSAPP_LINK = "https://wa.me/5515991241795?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20a%20Massoterapia";
 const LOGO_URL = "https://lh3.googleusercontent.com/aida/ADBb0ui5QYNAYQWgU5weuDe8F82TRFBOvjtS0u5pxv5PGptIpkf7lKAO5At099hsO_5JhhURZMQah8PYMivLXb3Pu5DFBUsC-OLJyITRu8iihj8OYMw1JT_lTFgkgfZSI_v39WwBgFJeQW8cCKgfE70EBIuaCpSYUeCoTGJn6GVgIg36BWsXoYyBoOpa5RtIkEN6jkYm1MYbwhhQ0STuN321cIRe6YxhuFS8cVlB41pEEI-dLOtm0nryDEj1Ra2vy9koFHmEOZeoyriyyV4";
 const PORTRAIT_URL = "https://lh3.googleusercontent.com/aida/ADBb0uiJzUyywnNb8o4jltUhbgi4qSV0EJp43WqRAqetDzDKXZBsazqPBhyAhcI60SurB4JulG5O5wbv6kz_pTzn_XoHacbuZv4Py92uhJwCvMOKB9iYNE74zZRQbbhg28p6tALJBwENTS3dszbAfKrobIob-Q71wbbqKUgRVmBCPXj59lCm3eyZNcOSa1ePw2NSiGHZkulkLdBv_wjrq5hwfvttZaxXBe8YhEEFiR3Icrvj2clQ6f2IYSa6vx42YGSmzpFvUlT2WDIWUYQ";
 
@@ -64,11 +64,11 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-2 md:pt-40 pb-10 md:pb-20 overflow-hidden relative">
+      <section id="home" className="pt-6 md:pt-40 pb-8 md:pb-20 overflow-hidden relative">
         <div className="absolute top-40 right-0 w-96 h-96 bg-secondary-container/50 rounded-full blur-3xl opacity-20 -z-10" />
-        <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 lg:items-end">
+        <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 lg:items-end">
           <motion.div 
-            className="lg:col-span-6 space-y-4 md:space-y-8 lg:mb-6 text-center lg:text-left"
+            className="lg:col-span-6 space-y-3 md:space-y-8 lg:mb-6 text-center lg:text-left"
             initial="initial"
             animate="animate"
             variants={stagger}
@@ -122,9 +122,9 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-24 bg-surface-container-low">
+      <section id="about" className="py-8 md:py-24 bg-surface-container-low">
         <div className="container-custom">
-          <div className="bg-white rounded-[40px] p-6 md:p-16 shadow-xl shadow-black/[0.03] relative overflow-hidden border border-[#E6E6DF]">
+          <div className="bg-white rounded-[40px] p-5 md:p-16 shadow-xl shadow-black/[0.03] relative overflow-hidden border border-[#E6E6DF]">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container rounded-full blur-3xl opacity-30" />
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -169,9 +169,9 @@ export default function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 md:py-24">
+      <section id="services" className="py-8 md:py-24">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16 space-y-4">
+          <div className="text-center max-w-2xl mx-auto mb-8 md:mb-16 space-y-4">
             <motion.h2 
               className="heading-lg text-primary"
               whileInView={{ opacity: 1, y: 0 }}
@@ -190,7 +190,7 @@ export default function App() {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 title: "Massagem Relaxante",
@@ -249,7 +249,7 @@ export default function App() {
                     </span>
                   </div>
                 </div>
-                <div className="p-8 space-y-4">
+                <div className="p-6 md:p-8 space-y-4">
                   <h3 className="heading-md text-on-surface">{service.title}</h3>
                   <p className="text-on-surface-variant line-clamp-3">
                     {service.desc}
@@ -265,8 +265,8 @@ export default function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-24 bg-gradient-to-br from-primary to-[#4a0a52] text-white text-center">
-        <div className="container-custom max-w-4xl space-y-8">
+      <section className="py-10 md:py-24 bg-gradient-to-br from-primary to-[#4a0a52] text-white text-center">
+        <div className="container-custom max-w-4xl space-y-6 md:space-y-8">
           <motion.div
             whileInView={{ scale: [0.98, 1], opacity: [0, 1] }}
             viewport={{ once: true }}
@@ -287,21 +287,21 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 bg-white border-t border-[#E6E6DF]">
+      <footer className="py-10 md:py-16 bg-white border-t border-[#E6E6DF]">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
-            <div className="md:col-span-2 space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
+            <div className="md:col-span-2 space-y-4 md:space-y-6">
               <img src={LOGO_URL} alt="Equilibrium" className="h-16 w-auto mx-auto md:mx-0 opacity-80" />
               <p className="text-on-surface-variant max-w-md">
                 Dedicada a proporcionar saúde, equilíbrio e relaxamento através de técnicas manuais precisas e personalizadas.
               </p>
             </div>
             
-            <div className="space-y-4">
+            <div className="space-y-2">
               <h4 className="font-bold text-on-surface uppercase tracking-widest text-xs">Atendimento</h4>
-              <ul className="space-y-3 text-on-surface-variant">
+              <ul className="space-y-2 text-on-surface-variant">
                 <li className="flex items-center justify-center md:justify-start gap-2">
-                  <Phone size={16} className="text-primary" /> (15) 99102-9607
+                  <Phone size={16} className="text-primary" /> (15) 99124-1795
                 </li>
                 <li className="flex items-center justify-center md:justify-start gap-2">
                   <MapPin size={16} className="text-primary" /> Sorocaba, SP
@@ -309,7 +309,7 @@ export default function App() {
               </ul>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-2">
               <h4 className="font-bold text-on-surface uppercase tracking-widest text-xs">Conecte-se</h4>
               <div className="flex justify-center md:justify-start gap-4 text-on-surface-variant">
                 <a href="https://www.instagram.com/adrianafat.massoterapeuta/" target="_blank" className="hover:text-primary transition-colors p-2 bg-surface rounded-full"><Instagram size={20} /></a>
@@ -318,7 +318,7 @@ export default function App() {
             </div>
           </div>
           
-          <div className="mt-16 pt-8 border-t border-[#E6E6DF] text-center text-[10px] uppercase tracking-widest text-on-surface-variant/60 leading-relaxed">
+          <div className="mt-8 pt-6 md:mt-16 md:pt-8 border-t border-[#E6E6DF] text-center text-[10px] uppercase tracking-widest text-on-surface-variant/60 leading-relaxed">
             © 2024 Adriana de Fátima Massoterapia <br className="md:hidden" /> Feito para o seu equilíbrio
           </div>
         </div>
