@@ -344,7 +344,7 @@ export default function App() {
               <h4 className="font-bold text-on-surface uppercase tracking-widest text-xs">Conecte-se</h4>
               <div className="flex justify-center md:justify-start gap-4 text-on-surface-variant">
                 <a href="https://www.instagram.com/adrianafat.massoterapeuta/" target="_blank" className="hover:text-primary transition-colors p-2 bg-surface rounded-full"><Instagram size={20} /></a>
-                <a href="https://www.instagram.com/adrianafat.massoterapeuta/" target="_blank" className="hover:text-primary transition-colors p-2 bg-surface rounded-full"><Facebook size={20} /></a>
+                <a href="https://www.facebook.com/adrianafat.massoterapeuta" target="_blank" className="hover:text-primary transition-colors p-2 bg-surface rounded-full"><Facebook size={20} /></a>
               </div>
             </div>
           </div>
