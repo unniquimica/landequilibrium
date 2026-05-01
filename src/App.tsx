@@ -305,25 +305,29 @@ export default function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-[#8e2d9c] to-[#6a1b7a] text-white text-center relative overflow-hidden">
-        <div className="container-custom max-w-4xl space-y-4 relative z-10">
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 20 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center"
-          >
-            <h2 className="font-script text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-2 leading-none whitespace-nowrap tracking-wide px-2">Massagem não é luxo!</h2>
-            <p className="font-sans text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-white/95 max-w-4xl mx-auto leading-relaxed mb-8 px-4">
-              É cura, autocuidado, qualidade de vida,<br />
-              amor próprio, equilíbrio e investimento!
-            </p>
+      <section className="py-8 md:py-16 bg-white">
+        <div className="container-custom">
+          <div className="bg-gradient-to-br from-[#8e2d9c] to-[#6a1b7a] rounded-[40px] py-12 md:py-16 text-white text-center relative overflow-hidden shadow-xl border border-[#E6E6DF]">
+            <div className="max-w-4xl mx-auto space-y-4 relative z-10 px-4">
+              <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center"
+              >
+                <h2 className="font-script text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-2 leading-none whitespace-nowrap tracking-wide px-2">Massagem não é luxo!</h2>
+                <p className="font-sans text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-white/95 max-w-4xl mx-auto leading-relaxed mb-8 px-4">
+                  É cura, autocuidado, qualidade de vida,<br />
+                  amor próprio, equilíbrio e investimento!
+                </p>
 
-            <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-3 bg-white text-primary px-10 py-4 rounded-full font-bold shadow-2xl hover:scale-105 transition-all text-lg md:text-xl">
-              <WhatsAppIcon size={24} />
-              Fale Comigo Agora
-            </a>
-          </motion.div>
+                <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-3 bg-white text-primary px-10 py-4 rounded-full font-bold shadow-2xl hover:scale-105 transition-all text-lg md:text-xl">
+                  <WhatsAppIcon size={24} />
+                  Fale Comigo Agora
+                </a>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
