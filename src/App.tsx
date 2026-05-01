@@ -303,7 +303,7 @@ export default function App() {
             viewport={{ once: true }}
             className="flex flex-col items-center"
           >
-            <h2 className="font-script text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-white mb-3 leading-none whitespace-nowrap tracking-wide px-2">Massagem não é luxo!</h2>
+            <h2 className="font-script text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-3 leading-none whitespace-nowrap tracking-wide px-2">Massagem não é luxo!</h2>
             <p className="font-sans text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-white/95 max-w-4xl mx-auto leading-relaxed mb-12 px-4">
               É cura, autocuidado, qualidade de vida,<br />
               amor próprio, equilíbrio e investimento!
