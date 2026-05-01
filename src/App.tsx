@@ -209,6 +209,24 @@ export default function App() {
                 tag: "Estética & Saúde",
                 desc: "Movimentos suaves que estimulam o sistema linfático, reduzindo o inchaço e melhorando a circulação sanguínea.",
                 img: "https://lh3.googleusercontent.com/aida/ADBb0uhPBqVnzYQoN3aMSRtocaEYw0kk3lBjOTMV6uQk5_lJmb56a06IWYKmKCDN271trdpomwNzRBAf9IgjJ5qGPZRkehPN_kRtRnpRY0lc9JZFL8463AUKNgIXkcuZ2iT4ZoGUCZgOaP7OvYddOxq2Zax-a2Cvndw_lga-SlUjK151y3ob1VOeREX7hRbFDV74j-TENxW9Vc3HS94RUA4AdjmKbOviDUeoOyvemLbCYw752_UV7izF2m0Afpf8uCR8V-WJK3DLFtRTRyE"
+              },
+              {
+                title: "Cone Hindu",
+                tag: "Equilíbrio & Limpeza",
+                desc: "A massagem com cone hindu oferece relaxamento profundo, desobstrução de canais auditivos, alívio de dores de cabeça e redução do estresse. Estimulando a circulação e promovendo equilíbrio energético.",
+                img: "https://i.pinimg.com/1200x/50/c8/54/50c854e56ef25e25e706f18b628c1b2b.jpg"
+              },
+              {
+                title: "Shiatsu",
+                tag: "Equilíbrio Energético",
+                desc: "Terapia japonesa que promove equilíbrio físico e energético por meio de pressões em pontos específicos. Alivia tensões, melhora a circulação e reduz o estresse.",
+                img: "https://i.pinimg.com/1200x/f1/5d/58/f15d58304ae598513e720962eddee91a.jpg"
+              },
+              {
+                title: "Escalda Pés",
+                tag: "Revitalização",
+                desc: "Prática relaxante que alivia tensões e melhora a circulação sanguínea. Combinando água morna e ingredientes terapêuticos para suavizar dores e combater o cansaço.",
+                img: "https://i.pinimg.com/1200x/c8/ab/8b/c8ab8bc79ba1070cb8742fbbddf8b6e0.jpg"
               }
             ].map((service, index) => (
               <motion.div 
@@ -237,7 +255,7 @@ export default function App() {
                     {service.desc}
                   </p>
                   <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-2 text-primary font-bold transition-transform group-hover:translate-x-1">
-                    Agendar agora <ArrowRight size={16} />
+                    Saiba mais <ArrowRight size={16} />
                   </a>
                 </div>
               </motion.div>
