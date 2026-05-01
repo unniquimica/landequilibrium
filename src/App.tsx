@@ -64,11 +64,11 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-6 md:pt-40 pb-8 md:pb-20 overflow-hidden relative">
+      <section id="home" className="pt-4 md:pt-40 pb-6 md:pb-20 overflow-hidden relative">
         <div className="absolute top-40 right-0 w-96 h-96 bg-secondary-container/50 rounded-full blur-3xl opacity-20 -z-10" />
-        <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 lg:items-end">
+        <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-12 lg:items-end">
           <motion.div 
-            className="lg:col-span-6 space-y-3 md:space-y-8 lg:mb-6 text-center lg:text-left"
+            className="lg:col-span-6 space-y-2 md:space-y-8 lg:mb-6 text-center lg:text-left"
             initial="initial"
             animate="animate"
             variants={stagger}
@@ -169,9 +169,9 @@ export default function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-8 md:py-24">
+      <section id="services" className="py-6 md:py-24">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-8 md:mb-16 space-y-4">
+          <div className="text-center max-w-2xl mx-auto mb-6 md:mb-16 space-y-3 md:space-y-4">
             <motion.h2 
               className="heading-lg text-primary"
               whileInView={{ opacity: 1, y: 0 }}
@@ -195,25 +195,25 @@ export default function App() {
               {
                 title: "Massagem Relaxante",
                 tag: "Relaxamento",
-                desc: "Técnica suave e rítmica focada no alívio do estresse, promovendo relaxamento profundo e bem-estar geral.",
+                desc: "Reduz o estresse, alivia tensões musculares e promove o equilíbrio emocional. Estimula a circulação e libera endorfina, proporcionando relaxamento profundo e restaurando a harmonia entre corpo e mente.",
                 img: "https://lh3.googleusercontent.com/aida/ADBb0uhvnRlTyZnB5y3KJ3MyaC_njEplFt2QovKb_PYiCjL_Z1MB2do2KiGRKvk-Vh2xSg0wFZrUFvAnX6VLKLQ6bDpSRlLNnZr_O4inX3vUmQn352VKUo_sTO0YfPE7Lx_jn1ApxOMyreucfb0Y9Q-opqKJKeianH_gz-hsKCuO2hU6UYP6Yx-F2bOb2ZpNvtDb4I0iCw2GOJBhME0sMq093BGEcaFTpXfZsqp8kkeZIJVctBNJeO99sdXDB2h8clHdXx4G_fIjC1n42-E"
               },
               {
                 title: "Massagem Terapêutica",
                 tag: "Terapêutico",
-                desc: "Focada no tratamento de dores e disfunções musculares, utilizando técnicas específicas para liberação miofascial.",
+                desc: "Focada no tratamento de dores e disfunções musculares, utilizando técnicas específicas para liberação miofascial e recuperação funcional.",
                 img: "https://lh3.googleusercontent.com/aida/ADBb0ujhTPqZiEPMtlijQ0Koxh2gyk_dDZ9VmA5dKuzDnG5g_ZsaAi5NYhTWWTOycR_yqeKEBlp9_OnYbeFmTCxaYKXE1Is2uxCncjbk2gnZZJrJfZY2D3LIb8a0xhjfFjwEREV1iuZ3pVKFbH1XDyTwiNIThoHSJkFuLwOtkJ8SbtR8h7CQMAn89OiXzdyt7xI4Ll-EIJjDF031OqH3B1Rx423WuSCASeLIWk0I29Jd2H4S4ENEOwCe88Zxit89bCuRUKpi4HkbTOQ_SXQ"
               },
               {
                 title: "Drenagem Linfática",
                 tag: "Estética & Saúde",
-                desc: "Movimentos suaves que estimulam o sistema linfático, reduzindo o inchaço e melhorando a circulação sanguínea.",
+                desc: "Estimula o sistema linfático para eliminação de toxinas e redução de inchaços. Auxilia no combate à retenção de líquidos e acelera a recuperação pós-operatória.",
                 img: "https://lh3.googleusercontent.com/aida/ADBb0uhPBqVnzYQoN3aMSRtocaEYw0kk3lBjOTMV6uQk5_lJmb56a06IWYKmKCDN271trdpomwNzRBAf9IgjJ5qGPZRkehPN_kRtRnpRY0lc9JZFL8463AUKNgIXkcuZ2iT4ZoGUCZgOaP7OvYddOxq2Zax-a2Cvndw_lga-SlUjK151y3ob1VOeREX7hRbFDV74j-TENxW9Vc3HS94RUA4AdjmKbOviDUeoOyvemLbCYw752_UV7izF2m0Afpf8uCR8V-WJK3DLFtRTRyE"
               },
               {
                 title: "Cone Hindu",
                 tag: "Equilíbrio & Limpeza",
-                desc: "A massagem com cone hindu oferece relaxamento profundo, desobstrução de canais auditivos, alívio de dores de cabeça e redução do estresse. Estimulando a circulação e promovendo equilíbrio energético.",
+                desc: "Relaxamento profundo e desobstrução de canais auditivos. Alivia dores de cabeça, reduz o estresse e promove equilíbrio energético através de técnica natural.",
                 img: "https://i.pinimg.com/1200x/50/c8/54/50c854e56ef25e25e706f18b628c1b2b.jpg"
               },
               {
@@ -227,6 +227,36 @@ export default function App() {
                 tag: "Revitalização",
                 desc: "Prática relaxante que alivia tensões e melhora a circulação sanguínea. Combinando água morna e ingredientes terapêuticos para suavizar dores e combater o cansaço.",
                 img: "https://i.pinimg.com/1200x/c8/ab/8b/c8ab8bc79ba1070cb8742fbbddf8b6e0.jpg"
+              },
+              {
+                title: "Cromoterapia",
+                tag: "Energia das Cores",
+                desc: "Utiliza cores para harmonizar corpo e mente. Auxilia no alívio do estresse, melhora do sono e fortalecimento do sistema imunológico, restaurando sua energia vital.",
+                img: "https://i.pinimg.com/1200x/98/9c/76/989c762e569cc0a72712838cabb863b8.jpg"
+              },
+              {
+                title: "Ventosaterapia",
+                tag: "Circulação & Dor",
+                desc: "Utiliza copos de sucção para melhorar a circulação e aliviar dores musculares. Promove relaxamento, desintoxicação e fortalecimento do sistema imunológico.",
+                img: "https://i.pinimg.com/1200x/fa/20/60/fa206044fee8dd38cebed21c4d4f616d.jpg"
+              },
+              {
+                title: "Bambuterapia",
+                tag: "Estética & Alívio",
+                desc: "Hastes de bambu que promovem relaxamento e melhoram a circulação. Estimula a drenagem linfática, reduz medidas e melhora a elasticidade da pele.",
+                img: "https://i.pinimg.com/1200x/3a/7d/e1/3a7de137f0359c80dd1059cbca7f5005.jpg"
+              },
+              {
+                title: "Pedras Quentes",
+                tag: "Calor Terapêutico",
+                desc: "Relaxamento profundo através do calor de pedras vulcânicas. Melhora a circulação, reduz o estresse e ajuda na desintoxicação do organismo de forma revigorante.",
+                img: "https://i.pinimg.com/1200x/33/a9/c0/33a9c0f981a0aff7fd5da9e030fb893f.jpg"
+              },
+              {
+                title: "Moxaterapia",
+                tag: "Medicina Oriental",
+                desc: "Técnica milenar que utiliza calor para estimular pontos energéticos. Promove alívio de dores, melhora a circulação e equilibra a energia vital do corpo.",
+                img: "https://i.pinimg.com/736x/fd/81/3b/fd813b9569be61fbdaa60f4158ebb166.jpg"
               }
             ].map((service, index) => (
               <motion.div 
@@ -265,29 +295,30 @@ export default function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 md:py-24 bg-gradient-to-br from-primary to-[#4a0a52] text-white text-center">
-        <div className="container-custom max-w-4xl space-y-6 md:space-y-8">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary to-[#4a0a52] text-white text-center relative overflow-hidden">
+        <div className="container-custom max-w-4xl space-y-6 relative z-10">
           <motion.div
-            whileInView={{ scale: [0.98, 1], opacity: [0, 1] }}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="flex flex-col items-center"
           >
-            <h2 className="heading-lg text-white">Permita-se um momento de paz</h2>
-            <p className="font-display text-white text-xs sm:text-sm md:text-lg lg:text-xl leading-relaxed">
-              O cuidado que seu corpo e mente merecem está a apenas uma mensagem de distância. Reserve seu horário hoje.
+            <h2 className="font-script text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-white mb-3 leading-none whitespace-nowrap tracking-wide px-2">Massagem não é luxo!</h2>
+            <p className="font-sans text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-white/95 max-w-4xl mx-auto leading-relaxed mb-12 px-4">
+              É cura, autocuidado, qualidade de vida,<br />
+              amor próprio, equilíbrio e investimento!
             </p>
-            <div className="pt-6">
-              <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-4 bg-white text-primary px-10 py-5 rounded-full font-bold shadow-xl hover:scale-105 transition-all text-lg">
-                <WhatsAppIcon size={24} />
-                Fale Comigo Agora
-              </a>
-            </div>
+
+            <a href={WHATSAPP_LINK} target="_blank" className="inline-flex items-center gap-3 bg-white text-primary px-12 py-5 rounded-full font-bold shadow-2xl hover:scale-105 transition-all text-xl md:text-2xl">
+              <WhatsAppIcon size={28} />
+              Fale Comigo Agora
+            </a>
           </motion.div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 md:py-16 bg-white border-t border-[#E6E6DF]">
+      <footer className="py-8 md:py-16 bg-white border-t border-[#E6E6DF]">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
             <div className="md:col-span-2 space-y-4 md:space-y-6">

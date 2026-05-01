@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Noto+Serif:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Great+Vibes&family=Manrope:wght@400;600;700&family=Monsieur+La+Doulaise&family=Noto+Serif:wght@600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-display: "Noto Serif", serif;
   --font-sans: "Manrope", sans-serif;
+  --font-script: "Great Vibes", cursive;
 
   --color-primary: #771982;
   --color-primary-container: #771982;
