@@ -26,8 +26,8 @@ const stagger = {
 };
 
 const WHATSAPP_LINK = "https://wa.me/5515991241795?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20a%20Massoterapia";
-const LOGO_URL = "https://lh3.googleusercontent.com/aida/ADBb0ui5QYNAYQWgU5weuDe8F82TRFBOvjtS0u5pxv5PGptIpkf7lKAO5At099hsO_5JhhURZMQah8PYMivLXb3Pu5DFBUsC-OLJyITRu8iihj8OYMw1JT_lTFgkgfZSI_v39WwBgFJeQW8cCKgfE70EBIuaCpSYUeCoTGJn6GVgIg36BWsXoYyBoOpa5RtIkEN6jkYm1MYbwhhQ0STuN321cIRe6YxhuFS8cVlB41pEEI-dLOtm0nryDEj1Ra2vy9koFHmEOZeoyriyyV4";
-const PORTRAIT_URL = "https://lh3.googleusercontent.com/aida/ADBb0uiJzUyywnNb8o4jltUhbgi4qSV0EJp43WqRAqetDzDKXZBsazqPBhyAhcI60SurB4JulG5O5wbv6kz_pTzn_XoHacbuZv4Py92uhJwCvMOKB9iYNE74zZRQbbhg28p6tALJBwENTS3dszbAfKrobIob-Q71wbbqKUgRVmBCPXj59lCm3eyZNcOSa1ePw2NSiGHZkulkLdBv_wjrq5hwfvttZaxXBe8YhEEFiR3Icrvj2clQ6f2IYSa6vx42YGSmzpFvUlT2WDIWUYQ";
+const LOGO_URL = "https://lh3.googleusercontent.com/d/1r_9XOeTfxnq5ubpx08lAmMlYDECQ9PN-";
+const PORTRAIT_URL = "https://lh3.googleusercontent.com/d/1R4YDQepefBK3fvqM2i3QETIxC8b6QLVd";
 
 const WhatsAppIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
   <svg 
@@ -48,8 +48,14 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-secondary-container hidden md:block transition-all duration-300">
         <div className="container-custom flex justify-between items-center h-24 lg:h-32">
-          <a href="#home" className="flex items-center gap-2">
-            <img src={LOGO_URL} alt="Equilibrium" className="h-14 lg:h-24 w-auto" />
+          <a href="#home" className="flex items-center gap-3 group">
+            <div className="relative h-14 lg:h-24 flex items-center">
+              <img 
+                src={LOGO_URL} 
+                alt="Equilibrium" 
+                className="h-full w-auto transition-opacity"
+              />
+            </div>
           </a>
           
           <div className="hidden md:flex items-center gap-8 text-on-surface font-medium">
@@ -93,20 +99,20 @@ export default function App() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
-            className="lg:col-span-6 relative"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative z-10 w-full max-w-sm mx-auto lg:max-w-md">
-              <div className="absolute inset-0 bg-secondary-container/30 rounded-full blur-3xl transform scale-110 -z-10" />
-              <img 
-                src={PORTRAIT_URL} 
-                alt="Adriana de Fátima" 
-                className="w-full h-auto drop-shadow-xl contrast-[1.02]"
-              />
-            </div>
+            <motion.div 
+              className="lg:col-span-6 relative"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative z-10 w-full max-w-sm mx-auto lg:max-w-md">
+                <div className="absolute inset-0 bg-secondary-container/30 rounded-full blur-3xl transform scale-110 -z-10" />
+                <img 
+                  src={PORTRAIT_URL} 
+                  alt="Adriana de Fátima" 
+                  className="w-full h-auto drop-shadow-xl contrast-[1.02] rounded-[40px] bg-secondary-container/20"
+                />
+              </div>
             
             <motion.div 
               className="mt-4 md:mt-8 flex justify-center lg:hidden"
@@ -136,7 +142,7 @@ export default function App() {
               >
                 <div className="aspect-[4/5] rounded-[32px] overflow-hidden shadow-sm">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uim2nT0QG78BrtDhbaIBbi-S6-hv_OC4fzJ4zwPwJwrWj1ivJLzJYYJjFgv_1XnbjouIllBuaHcbNg-vhHBfqsHF4_SCAmP6MHWguzpS0ipED7hNHhXqaykuZTj9o-zxgeP0EDn43RAnFnHLZHTcmB4sWJ-YLvBV189xpkn5W5K7ty5i3h9m9RC27mde_IBCiZxXp_Uj0T2KX1unswSTJm1K2QG_bkJFbuBczQZYAuibI3Y4K9GXQOVBdYd0hKvZbuVDsaUK6DGl2Y" 
+                    src="https://www.pompeiaortopedia.com.br/wp-content/uploads/2022/10/massoterapia-quais-os-beneficios.png" 
                     alt="Processo de Massagem" 
                     className="w-full h-full object-cover"
                   />
@@ -196,19 +202,19 @@ export default function App() {
                 title: "Massagem Relaxante",
                 tag: "Relaxamento",
                 desc: "Reduz o estresse, alivia tensões musculares e promove o equilíbrio emocional. Estimula a circulação e libera endorfina, proporcionando relaxamento profundo e restaurando a harmonia entre corpo e mente.",
-                img: "https://lh3.googleusercontent.com/aida/ADBb0uhvnRlTyZnB5y3KJ3MyaC_njEplFt2QovKb_PYiCjL_Z1MB2do2KiGRKvk-Vh2xSg0wFZrUFvAnX6VLKLQ6bDpSRlLNnZr_O4inX3vUmQn352VKUo_sTO0YfPE7Lx_jn1ApxOMyreucfb0Y9Q-opqKJKeianH_gz-hsKCuO2hU6UYP6Yx-F2bOb2ZpNvtDb4I0iCw2GOJBhME0sMq093BGEcaFTpXfZsqp8kkeZIJVctBNJeO99sdXDB2h8clHdXx4G_fIjC1n42-E"
+                img: "https://www.troisbeaute.com.br/wp-content/uploads/2020/08/istock-1175433234-1024x683.jpg"
               },
               {
                 title: "Massagem Terapêutica",
                 tag: "Terapêutico",
                 desc: "Focada no tratamento de dores e disfunções musculares, utilizando técnicas específicas para liberação miofascial e recuperação funcional.",
-                img: "https://lh3.googleusercontent.com/aida/ADBb0ujhTPqZiEPMtlijQ0Koxh2gyk_dDZ9VmA5dKuzDnG5g_ZsaAi5NYhTWWTOycR_yqeKEBlp9_OnYbeFmTCxaYKXE1Is2uxCncjbk2gnZZJrJfZY2D3LIb8a0xhjfFjwEREV1iuZ3pVKFbH1XDyTwiNIThoHSJkFuLwOtkJ8SbtR8h7CQMAn89OiXzdyt7xI4Ll-EIJjDF031OqH3B1Rx423WuSCASeLIWk0I29Jd2H4S4ENEOwCe88Zxit89bCuRUKpi4HkbTOQ_SXQ"
+                img: "https://nucleocursos.com.br/blog/wp-content/uploads/2023/12/O-que-e-Massagem-Terapeutica.jpg"
               },
               {
                 title: "Drenagem Linfática",
                 tag: "Estética & Saúde",
                 desc: "Estimula o sistema linfático para eliminação de toxinas e redução de inchaços. Auxilia no combate à retenção de líquidos e acelera a recuperação pós-operatória.",
-                img: "https://lh3.googleusercontent.com/aida/ADBb0uhPBqVnzYQoN3aMSRtocaEYw0kk3lBjOTMV6uQk5_lJmb56a06IWYKmKCDN271trdpomwNzRBAf9IgjJ5qGPZRkehPN_kRtRnpRY0lc9JZFL8463AUKNgIXkcuZ2iT4ZoGUCZgOaP7OvYddOxq2Zax-a2Cvndw_lga-SlUjK151y3ob1VOeREX7hRbFDV74j-TENxW9Vc3HS94RUA4AdjmKbOviDUeoOyvemLbCYw752_UV7izF2m0Afpf8uCR8V-WJK3DLFtRTRyE"
+                img: "https://shiatsuluizasato.com.br/wp-content/uploads/2025/01/Head-Blog.jpg"
               },
               {
                 title: "Cone Hindu",
@@ -336,7 +342,13 @@ export default function App() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
             <div className="md:col-span-2 space-y-4 md:space-y-6">
-              <img src={LOGO_URL} alt="Equilibrium" className="h-16 md:h-24 w-auto mx-auto md:mx-0 opacity-80" />
+              <div className="flex items-center gap-3 mx-auto md:mx-0">
+                <img 
+                  src={LOGO_URL} 
+                  alt="Equilibrium" 
+                  className="h-16 md:h-24 w-auto opacity-80"
+                />
+              </div>
               <p className="text-on-surface-variant max-w-md">
                 Dedicada a proporcionar saúde, equilíbrio e relaxamento através de técnicas manuais precisas e personalizadas.
               </p>
@@ -349,7 +361,13 @@ export default function App() {
                   <Phone size={16} className="text-primary" /> (15) 99124-1795
                 </li>
                 <li className="flex items-center justify-center md:justify-start gap-2">
-                  <MapPin size={16} className="text-primary" /> Sorocaba, SP
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Adriana+de+Fátima+Massoterapia+Sorocaba" 
+                    target="_blank" 
+                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                  >
+                    <MapPin size={16} className="text-primary" /> Sorocaba, SP
+                  </a>
                 </li>
               </ul>
             </div>
