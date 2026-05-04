@@ -82,7 +82,7 @@ export default function App() {
             <motion.img 
               src={LOGO_URL} 
               alt="Equilibrium Logo" 
-              className="h-24 md:h-32 mb-4 md:mb-8 mx-auto lg:hidden" 
+              className="h-24 md:h-32 mb-4 md:mb-8 block mx-auto lg:hidden" 
               variants={fadeIn}
             />
             <motion.h1 className="heading-display text-primary" variants={fadeIn}>
@@ -341,15 +341,15 @@ export default function App() {
       <footer className="py-6 md:py-10 bg-white border-t border-[#E6E6DF]">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
-            <div className="md:col-span-2 space-y-4 md:space-y-6">
-              <div className="flex items-center gap-3 mx-auto md:mx-0">
+            <div className="md:col-span-2 space-y-4 md:space-y-6 flex flex-col items-center md:items-start text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-3">
                 <img 
                   src={LOGO_URL} 
                   alt="Equilibrium" 
                   className="h-16 md:h-24 w-auto opacity-80"
                 />
               </div>
-              <p className="text-on-surface-variant max-w-md">
+              <p className="text-on-surface-variant max-w-md mx-auto md:mx-0">
                 Dedicada a proporcionar saúde, equilíbrio e relaxamento através de técnicas manuais precisas e personalizadas.
               </p>
             </div>
