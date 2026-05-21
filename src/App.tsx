@@ -47,9 +47,9 @@ export default function App() {
     <div className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-secondary-container hidden md:block transition-all duration-300">
-        <div className="container-custom flex justify-between items-center h-24 lg:h-32">
+        <div className="container-custom flex justify-between items-center h-20 lg:h-24">
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative h-14 lg:h-24 flex items-center">
+            <div className="relative h-14 lg:h-18 flex items-center">
               <img 
                 src={LOGO_URL} 
                 alt="Equilibrium" 
@@ -70,11 +70,11 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-4 md:pt-44 lg:pt-52 pb-6 md:pb-20 overflow-hidden relative">
+      <section id="home" className="pt-6 md:pt-24 lg:pt-28 pb-0 overflow-hidden relative">
         <div className="absolute top-40 right-0 w-96 h-96 bg-secondary-container/50 rounded-full blur-3xl opacity-20 -z-10" />
         <div className="container-custom grid grid-cols-1 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-12 lg:items-end">
           <motion.div 
-            className="lg:col-span-6 space-y-2 md:space-y-8 lg:mb-6 text-center lg:text-left"
+            className="lg:col-span-6 space-y-4 md:space-y-8 lg:mb-12 xl:mb-16 text-center lg:text-left pb-8 lg:pb-0"
             initial="initial"
             animate="animate"
             variants={stagger}
@@ -91,7 +91,7 @@ export default function App() {
             <motion.p className="body-lg" variants={fadeIn}>
               Experimente o poder curativo das mãos. Técnicas de massoterapia especializadas por Adriana de Fátima para aliviar o estresse, reduzir dores e promover um relaxamento profundo.
             </motion.p>
-            <motion.div className="hidden lg:flex flex-wrap gap-4" variants={fadeIn}>
+            <motion.div className="flex flex-wrap justify-center lg:justify-start gap-4" variants={fadeIn}>
               <a href={WHATSAPP_LINK} target="_blank" className="btn-primary">
                 <WhatsAppIcon size={20} className="mr-1" />
                 Agendar sua Sessão
@@ -100,29 +100,19 @@ export default function App() {
           </motion.div>
 
             <motion.div 
-              className="lg:col-span-6 relative"
+              className="lg:col-span-6 relative flex items-end justify-center"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="relative z-10 w-full max-w-sm mx-auto lg:max-w-md">
-                <div className="absolute inset-0 bg-secondary-container/30 rounded-full blur-3xl transform scale-110 -z-10" />
+              <div className="relative z-10 w-full max-w-md mx-auto lg:max-w-[520px] mt-auto">
+                <div className="absolute inset-0 bg-secondary-container/20 rounded-full blur-3xl transform scale-110 -z-10" />
                 <img 
                   src={PORTRAIT_URL} 
                   alt="Adriana de Fátima" 
-                  className="w-full h-auto drop-shadow-xl contrast-[1.02] rounded-[40px] bg-secondary-container/20"
+                  className="w-full h-auto drop-shadow-xl contrast-[1.02] block"
                 />
               </div>
-            
-            <motion.div 
-              className="mt-4 md:mt-8 flex justify-center lg:hidden"
-              variants={fadeIn}
-            >
-              <a href={WHATSAPP_LINK} target="_blank" className="btn-primary">
-                <WhatsAppIcon size={20} className="mr-1" />
-                Agendar sua Sessão
-              </a>
-            </motion.div>
           </motion.div>
         </div>
       </section>
